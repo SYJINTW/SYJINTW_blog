@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Linux - Tag - SYJINTW</title>
+        <link>https://example.com/tags/linux/</link>
+        <description>Linux - Tag - SYJINTW</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</managingEditor>
+            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 21:20:15 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux Setup</title>
+    <link>https://example.com/linux_setup/</link>
+    <pubDate>Sun, 22 Aug 2021 21:20:15 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://example.com/linux_setup/</guid>
+    <description><![CDATA[最近在因為進實驗室有一台桌機可以灌系統，然後一開始灌了 Ubuntu ，但是不知道發生什麼事突然掛掉，所以我就生氣打算重新灌一個系統。經過實驗室學長的推薦，決定試試看 Pop! OS ，反正都是 Ubuntu 為基礎的 OS ，所以設定上都差不多。
+這篇文章主要會放在紀錄我對 Linux 環境，好看好用方面的設定，不在意美觀的自行斟酌。
+ 下載基礎工具 1 2 3  sudo apt-get update sudo apt-get upgrade sudo apt-get -y install git snapd snapcraft cmake gcc speedtest-cli vim nano tmux python3.8 openssh-client    Terminal (Oh-my-zsh) 下載 zsh
+1  sudo apt-get -y install zsh   下載 oh-my-zsh
+1  sh -c &#34;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&#34;   Shell 預設改成 zsh]]></description>
+</item></channel>
+</rss>

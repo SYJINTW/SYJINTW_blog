@@ -8,9 +8,6 @@ lightgallery: true
 math:
   enable: true
 ---
-{{< style "img { height: 1.25rem; }" >}}
-[![GitHub stars](https://img.shields.io/github/followers/SYJINTW?style=social)](https://github.com/SYJINTW)
-{{< /style >}}
 
 > [:(far fa-kiss-wink-heart fa-fw): LoveIt](https://github.com/dillonzq/LoveIt) 是一个由 [Dillon](https://dillonzq.com) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。
 >

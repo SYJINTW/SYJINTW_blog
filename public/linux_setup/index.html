@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Linux Setup - SYJINTW</title><meta name="Description" content="Setup Linux (Pop OS) and Zsh."><meta property="og:title" content="Linux Setup" />
+<meta property="og:description" content="Setup Linux (Pop OS) and Zsh." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/linux_setup/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-22T21:20:15+08:00" />
+<meta property="article:modified_time" content="2021-08-22T21:20:15+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/logo.png"/>
+
+<meta name="twitter:title" content="Linux Setup"/>
+<meta name="twitter:description" content="Setup Linux (Pop OS) and Zsh."/>
+<meta name="application-name" content="SYJINTW">
+<meta name="apple-mobile-web-app-title" content="SYJINTW"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/linux_setup/" /><link rel="prev" href="https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Linux Setup",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/example.com\/linux_setup\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, setup, installation","wordcount":  393 ,
+        "url": "https:\/\/example.com\/linux_setup\/","datePublished": "2021-08-22T21:20:15+08:00","dateModified": "2021-08-22T21:20:15+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "SYJINTW","logo": "https:\/\/example.com\/images\/SYJINTW.png"},"author": {
+                "@type": "Person",
+                "name": "SYJINTW"
+            },"description": "Setup Linux (Pop OS) and Zsh."
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="SYJINTW"><span class="header-title-pre"><i class='fas fa-code-branch fa-fw'></i></span>SYJINTW</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/SYJINTW" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/linux_setup/" selected>English</option><option value="/zh-cn/linux_setup/">中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="SYJINTW"><span class="header-title-pre"><i class='fas fa-code-branch fa-fw'></i></span>SYJINTW</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/SYJINTW" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/linux_setup/" selected>English</option><option value="/zh-cn/linux_setup/">中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Linux Setup</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>SYJINTW</a></span>&nbsp;<span class="post-category">included in <a href="/categories/markdown/"><i class="far fa-folder fa-fw"></i>markdown</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-22">2021-08-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;393 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#下載基礎工具">下載基礎工具</a></li>
+    <li><a href="#terminal-oh-my-zsh">Terminal (Oh-my-zsh)</a>
+      <ul>
+        <li><a href="#安裝字型">安裝字型</a></li>
+        <li><a href="#設定主題">設定主題</a></li>
+        <li><a href="#下載-plugin">下載 plugin</a>
+          <ul>
+            <li><a href="#autosuggestions">Autosuggestions</a></li>
+            <li><a href="#syntax-highlighting">Syntax highlighting</a></li>
+            <li><a href="#colored-man-pages">Colored man pages</a></li>
+            <li><a href="#web-search">Web search</a></li>
+            <li><a href="#copydir">Copydir</a></li>
+            <li><a href="#copyfile">Copyfile</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#小結">小結</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>最近在因為進實驗室有一台桌機可以灌系統，然後一開始灌了 Ubuntu ，但是不知道發生什麼事突然掛掉，所以我就生氣打算重新灌一個系統。經過實驗室學長的推薦，決定試試看 Pop! OS ，反正都是 Ubuntu 為基礎的 OS ，所以設定上都差不多。</p>
+<p>這篇文章主要會放在紀錄我對 Linux 環境，好看好用方面的設定，不在意美觀的自行斟酌。</p>
+<hr>
+<!-- Basic tools -->
+<h2 id="下載基礎工具">下載基礎工具</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get -y install git snapd snapcraft cmake gcc speedtest-cli vim nano tmux python3.8 openssh-client
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<!-- Terminal Setting -->
+<h2 id="terminal-oh-my-zsh">Terminal (Oh-my-zsh)</h2>
+<p>下載 zsh</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get -y install zsh
+</code></pre></td></tr></table>
+</div>
+</div><p>下載 oh-my-zsh</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Shell 預設改成 zsh</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">chsh -s /bin/zsh
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="安裝字型">安裝字型</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get -y install powerline fonts-powerline ttf-ancient-fonts
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="設定主題">設定主題</h3>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener noreffer">Themes · ohmyzsh/ohmyzsh Wiki</a></p>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes" target="_blank" rel="noopener noreffer">External themes · ohmyzsh/ohmyzsh Wiki</a></p>
+<p>這裡用 <code>bullet-train</code> 為例子</p>
+<p><a href="https://github.com/caiogondim/bullet-train.zsh" target="_blank" rel="noopener noreffer">GitHub - caiogondim/bullet-train.zsh: An oh-my-zsh shell theme based on the Powerline Vim plugin</a></p>
+<p>建立一個新資料夾</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">mkdir -p ~/.oh-my-zsh/custom/themes/
+</code></pre></td></tr></table>
+</div>
+</div><p>下載主題</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">wget -xqO ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
+</code></pre></td></tr></table>
+</div>
+</div><p>用 <code>vim</code> 打開 zsh 的設定檔</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo vim ~/.zshrc
+</code></pre></td></tr></table>
+</div>
+</div><p>把 ~/.zshrc 中的 <code>ZSH_THEME</code> 換成自己想要的主題</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&#34;bullet-train&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在 <code>ZSH_THEME</code> 的前一行加上</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span><span class="s2">&#34;xterm-256color&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>把 ~/.zshrc 中添加 <code>BULLETTRAIN_PROMPT_ORDER</code> 調整 Bullet train 顯示的東西</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">BULLETTRAIN_PROMPT_ORDER</span><span class="o">=(</span>
+  <span class="nb">time</span>
+	status
+  context
+  dir
+  git
+	cmd_exec_time
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果顯示亂碼的話，到 terminal 的 Preferences → Pop → Text，把 Custom font 設成 <code>Hack Regular</code></p>
+<h3 id="下載-plugin">下載 plugin</h3>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins" target="_blank" rel="noopener noreffer">Plugins · ohmyzsh/ohmyzsh Wiki</a></p>
+<h4 id="autosuggestions">Autosuggestions</h4>
+<p>下載 <code>zsh-autosuggestions</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
+</code></pre></td></tr></table>
+</div>
+</div><p>在 ~/.zshrc 中的 <code>plugins</code> 添加 plugin 名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">plugins</span><span class="o">=(</span> 
+    <span class="c1"># other plugins...</span>
+    zsh-autosuggestions
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="syntax-highlighting">Syntax highlighting</h4>
+<p>下載 <code>zsh-syntax-highlighting</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-syntax-highlighting
+</code></pre></td></tr></table>
+</div>
+</div><p>在 ~/.zshrc 中的 <code>plugins</code> 添加 plugin 名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">plugins</span><span class="o">=(</span> 
+    <span class="c1"># other plugins...</span>
+    zsh-syntax-highlighting
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="colored-man-pages">Colored man pages</h4>
+<p>在 ~/.zshrc 中的 <code>plugins</code> 添加 plugin 名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">plugins</span><span class="o">=(</span> 
+    <span class="c1"># other plugins...</span>
+    colored-man-pages
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="web-search">Web search</h4>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search" target="_blank" rel="noopener noreffer">ohmyzsh/plugins/web-search at master · ohmyzsh/ohmyzsh</a></p>
+<p>在 ~/.zshrc 中的 <code>plugins</code> 添加 plugin 名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">plugins</span><span class="o">=(</span> 
+    <span class="c1"># other plugins...</span>
+    web-search
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如何使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">web_search google <span class="o">[</span>what to search<span class="o">]</span>
+google <span class="o">[</span>what to search<span class="o">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="copydir">Copydir</h4>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copydir" target="_blank" rel="noopener noreffer">ohmyzsh/plugins/copydir at master · ohmyzsh/ohmyzsh</a></p>
+<p>在 ~/.zshrc 中的 <code>plugins</code> 添加 plugin 名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">plugins</span><span class="o">=(</span> 
+    <span class="c1"># other plugins...</span>
+    copydir
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Then use the command <code>copydir</code> to copy the $PWD.</p>
+<p>如果出現 <code>Platform linux-gnu not supported or xclip/xsel not installed</code></p>
+<p>就安裝 <code>xclip</code> 並且重新打開 terminal</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get -y install xclip
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="copyfile">Copyfile</h4>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copyfile" target="_blank" rel="noopener noreffer">ohmyzsh/plugins/copyfile at master · ohmyzsh/ohmyzsh</a></p>
+<p>在 ~/.zshrc 中的 <code>plugins</code> 添加 plugin 名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">plugins</span><span class="o">=(</span> 
+    <span class="c1"># other plugins...</span>
+    copyfile
+<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Then you can run the command <code>copyfile &lt;filename&gt;</code> to copy the file named <code>filename</code>.</p>
+<p>如果出現 <code>Platform linux-gnu not supported or xclip/xsel not installed</code></p>
+<p>就安裝 <code>xclip</code> 並且重新打開 terminal</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get -y install xclip
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="小結">小結</h2>
+<p>大致先寫成這樣，希望可以幫助跟我一樣還不太會設定 Linux 的人。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-08-22</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/linux_setup/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/setup/">setup</a>,&nbsp;<a href="/tags/installation/">installation</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/" class="prev" rel="prev" title="First DOC"><i class="fas fa-angle-left fa-fw"></i>First DOC</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">This is SYJ in TW.</div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">SYJINTW</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -4,7 +4,14 @@
         <link>https://example.com/zh-cn/posts/</link>
         <description>所有文章 | SYJINTW</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</managingEditor>
-            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</lastBuildDate><atom:link href="https://example.com/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 21:20:15 &#43;0800</lastBuildDate><atom:link href="https://example.com/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux Setup</title>
+    <link>https://example.com/zh-cn/linux_setup/</link>
+    <pubDate>Sun, 22 Aug 2021 21:20:15 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://example.com/zh-cn/linux_setup/</guid>
+    <description><![CDATA[最近在因為進實驗室有一台桌機可以灌系統，然後一開始灌了 Ubuntu ，但是不知道發生什麼事突然掛掉，所以我就生氣打算重新灌一個系統。經過實驗室學長的推薦]]></description>
+</item><item>
     <title>First DOC</title>
     <link>https://example.com/zh-cn/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</link>
     <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>
