@@ -1,9 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>LoveIt</title>
+        <title>SYJINTW</title>
         <link>https://example.com/</link>
-        <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 18:10:48 &#43;0800</lastBuildDate>
+        <description>SYJINTW blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</managingEditor>
+            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 18:10:48 &#43;0800</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Demo</title>

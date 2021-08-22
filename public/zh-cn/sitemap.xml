@@ -7,10 +7,6 @@
                         hreflang="en"
                         href="https://example.com/categories/"
                         /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://example.com/fr/categories/"
-                        /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://example.com/zh-cn/categories/"
@@ -20,10 +16,6 @@
                         hreflang="en"
                         href="https://example.com/"
                         /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://example.com/fr/"
-                        /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://example.com/zh-cn/"
@@ -32,10 +24,6 @@
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/tags/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://example.com/fr/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
