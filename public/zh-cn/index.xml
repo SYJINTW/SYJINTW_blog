@@ -13,19 +13,5 @@
     <author>作者</author>
     <guid>https://example.com/zh-cn/linux_setup/</guid>
     <description><![CDATA[最近在因為進實驗室有一台桌機可以灌系統，然後一開始灌了 Ubuntu ，但是不知道發生什麼事突然掛掉，所以我就生氣打算重新灌一個系統。經過實驗室學長的推薦]]></description>
-</item><item>
-    <title>First DOC</title>
-    <link>https://example.com/zh-cn/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</link>
-    <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/zh-cn/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>First Post</title>
-    <link>https://example.com/zh-cn/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-    <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://example.com/zh-cn/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-    <description><![CDATA[]]></description>
 </item></channel>
 </rss>

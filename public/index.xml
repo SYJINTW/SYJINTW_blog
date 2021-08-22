@@ -17,19 +17,5 @@
  下載基礎工具 1 2 3  sudo apt-get update sudo apt-get upgrade sudo apt-get -y install git snapd snapcraft cmake gcc speedtest-cli vim nano tmux python3.8 openssh-client    Terminal (Oh-my-zsh) 下載 zsh
 1  sudo apt-get -y install zsh   下載 oh-my-zsh
 1  sh -c &#34;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&#34;   Shell 預設改成 zsh]]></description>
-</item><item>
-    <title>First DOC</title>
-    <link>https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</link>
-    <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>First Post</title>
-    <link>https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-    <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-    <description><![CDATA[]]></description>
 </item></channel>
 </rss>
