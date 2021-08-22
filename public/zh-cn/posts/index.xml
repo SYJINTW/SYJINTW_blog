@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>SYJINTW</title>
-        <link>https://example.com/zh-cn/</link>
-        <description>SYJINTW 的博客</description>
+        <title>所有文章 - SYJINTW</title>
+        <link>https://example.com/zh-cn/posts/</link>
+        <description>所有文章 | SYJINTW</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><managingEditor>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</managingEditor>
-            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</lastBuildDate>
-            <atom:link href="https://example.com/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</lastBuildDate><atom:link href="https://example.com/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
     <title>First DOC</title>
     <link>https://example.com/zh-cn/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</link>
     <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Documentation - Category - SYJINTW</title>
+        <link>https://example.com/categories/documentation/</link>
+        <description>Documentation - Category - SYJINTW</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</managingEditor>
+            <webMaster>yuanjiun911@gapp.nthu.edu.tw (SYJINTW)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://example.com/categories/documentation/" rel="self" type="application/rss+xml" /><item>
+    <title>First DOC</title>
+    <link>https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</link>
+    <pubDate>Sun, 22 Aug 2021 20:13:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://example.com/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E6%AA%94/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
