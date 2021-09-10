@@ -7,7 +7,7 @@
 
 [How to read Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 
-## Three-Pass Approach
+## Three-Pass Apporach
 
 ---
 
@@ -79,5 +79,3 @@
 1. find in Google Scholar, CiteSeer
 2.  find shared citations and repeated author names
 3. website for these top conferences
-
-

@@ -1,5 +1,32 @@
-# [Paper Note] - How to read paper
+---
+title: "[Paper Note] - How to read paper"
+subtitle: ""
+date: 2021-08-24T17:06:10+08:00
+draft: false
+author: "SYJINTW"
+authorLink: ""
+description: "Note for 'How to read paper'"
 
+tags: ["NMSL", "paper", "note"]
+categories: ["paper-note"]
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+
+featuredImage: ""
+featuredImagePreview: ""
+
+toc:
+  enable: true
+  auto: false
+
+math:
+  enable: false
+
+lightgallery: false
+
+license: ""
+---
 
 ## Paper resource
 
@@ -7,7 +34,7 @@
 
 [How to read Paper](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 
-## Three-Pass Approach
+## Three-Pass Apporach
 
 ---
 
@@ -79,5 +106,3 @@
 1. find in Google Scholar, CiteSeer
 2.  find shared citations and repeated author names
 3. website for these top conferences
-
-
